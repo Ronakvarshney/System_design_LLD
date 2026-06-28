@@ -1,0 +1,8 @@
+what is LLD ??
+LLD means designing the internal structure of software system before writing the actual code. 
+It focus on how the system will build at class , object and modular level.
+LLD focus mainly on SCALABILITY , MAINTAINABILITY , REUSABILITY
+
+On the other hand HLD defines which tech stack we use , which database is to be used , how many servers needed and how to scale in future well, this all 
+things were comes in HLD.
+
