@@ -1,0 +1,119 @@
+UML diagrams are of two types -> structural and behavioural
+
+In structural we defines components and how they connect with
+each other.They focus on what exists in the system rather than how it behaves.
+
+
+
+In behavioural diagrams we defines how they interact with each
+other. they also known as dynamic diagrams.
+
+
+
+In structural we have to learn class diagrams
+In behavioural we have to learn sequence diagrams
+
+
+Class diagrams----------------------------
+It defines what are the classes are having to exists in the 
+application and how they connect with each other.
+
+Associations -> when two classes are connected or depended on each 
+other.
+
+Types of Associations-> 2 types => class Associations and object
+Associations -> In class level we have inheritance.
+
+In object level we have simple , aggegration , composition.
+
+Aggregation and Composition are special types of associations in UML. 
+Both represent a "has-a" relationship, but the difference is based on ownership and dependency.
+
+1. Aggregation (Weak "Has-A" Relationship)
+
+Aggregation means one class contains another class, but both can exist independently.
+
+Represents: whole-part relationship
+The part can exist without the whole.
+UML symbol: empty diamond (◇)
+Example:
+
+A Department has Teachers.
+
+      ◇
+Department -------- Teacher
+
+Meaning:
+A department contains teachers.
+But if the department is deleted, teachers can still exist.
+Code Example:
+class Teacher {
+public:
+    string name;
+};
+
+
+class Department {
+public:
+    Teacher* teacher;
+};
+
+Here:
+Teacher object is created separately.
+Department only stores its reference.
+
+Example:
+Teacher t1;
+Department d1;
+d1.teacher = &t1;
+If d1 is destroyed, t1 still exists.
+
+
+
+2. Composition (Strong "Has-A" Relationship)
+Composition means one class completely owns another class.
+
+Represents: strong whole-part relationship
+The part cannot exist without the whole.
+UML symbol: filled diamond (◆)
+Example:
+
+A House has Rooms.
+
+       ◆
+House -------- Room
+
+Meaning:
+A room belongs to a house.
+If the house is destroyed, rooms are also destroyed.
+Code Example:
+class Room {
+public:
+    Room() {
+        cout << "Room created";
+    }
+};
+
+
+class House {
+private:
+    Room room;
+
+public:
+    House() {
+        room = Room();
+    }
+};
+
+Here:
+House h;
+creates:
+House
+ |
+ └── Room
+
+When House is destroyed, Room is automatically destroyed.
+
+
+what are sequence diagrams and how to use them in system design??
+
