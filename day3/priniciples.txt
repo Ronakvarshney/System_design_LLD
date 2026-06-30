@@ -1,0 +1,12 @@
+// solid design priniciples ---->
+
+s stands for -> single responsibility principle 
+o stands for -> open-close principle
+l stands for -> leskove substitution principle
+i stands for -> interface syxgation priniciple
+d stands for -> dependency inversion priniciples
+
+
+s-> class should be responsibile for only one thing, it not like
+it to perform multiple different operations.
+
