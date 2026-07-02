@@ -38,6 +38,18 @@ The day2 folder introduces UML concepts that are useful in low-level design and 
   - the difference between weak and strong "has-a" relationships
 - `uml.cpp` demonstrates composition in C++ with a `House` object containing a `Room` object.
 
+## Day 3 Overview
+
+The day3 folder focuses on SOLID principles, especially the design ideas that make code easier to extend and maintain.
+
+- `SRP.cpp` and `SRP.md` cover the Single Responsibility Principle.
+- `OCP/ocp_followed.cpp` and `OCP/ocp_voilated.cpp` show the Open/Closed Principle:
+  - a class should be open for extension but closed for modification
+  - new behavior should be added through extension instead of changing existing working code
+- `LSP/lsp_followed.cpp` and `LSP/lsp_voilated.cpp` show the Liskov Substitution Principle:
+  - derived classes should be replaceable for their base classes without breaking the program
+  - subclasses must honor the behavior expected by the parent type
+
 ## Repository Structure
 
 - **day1/** - Introduction to LLD concepts and OOP fundamentals
