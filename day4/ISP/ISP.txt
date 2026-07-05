@@ -1,0 +1,3 @@
+Many client specific interface are better than the general purpose interface.
+client should not force to implement the methods that they don't need.
+
